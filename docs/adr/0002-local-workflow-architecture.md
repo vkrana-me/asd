@@ -1,0 +1,3 @@
+# Run the product as a local browser application with one workflow seam
+
+The product runs a local Node LTS process that opens a React browser UI, rather than using a hosted system or desktop shell. The process exposes one typed Hono Interface for the Repository-Based Course workflow, persists local data in SQLite and FTS5 with Course Snapshots in the filesystem, runs clone and analysis work in worker threads, and injects clone, credential-store, and OpenAI-compatible provider Adapters; this preserves the local-first privacy model while keeping the UI responsive and the core behavior testable through one seam.
